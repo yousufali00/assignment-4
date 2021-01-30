@@ -1,5 +1,3 @@
-
-
 // First class 
 
 const firstAddBtn = document.getElementById('btn-add-first');
@@ -33,17 +31,6 @@ economyMinusBtn.addEventListener( 'click', () => {
 } );
 
 
-// Book now 
-
-// const bookNowBtn = document.getElementById('book-now');
-
-// bookNowBtn.addEventListener( 'click', (event) =>{
-//     document.getElementById('booking-area').style.display = 'none'
-//     document.getElementById('booking-content-left').style.display = 'none'
-//     document.getElementById('confirmation-area').style.display = 'block'
-// } );
-
-
 function  calculationHandler( increaseOrNot, inputId ){
 
     const quantityInput = parseInt(document.getElementById(inputId).value);
@@ -69,8 +56,6 @@ function  calculationHandler( increaseOrNot, inputId ){
 
         const totalVat = vatCalculator(true);
         document.getElementById('vat').innerText = totalVat;
-
-
 
     }
     if ( increaseOrNot === false && quantityInput > 0 ) {
@@ -98,9 +83,9 @@ function  calculationHandler( increaseOrNot, inputId ){
 
     }
     
-    
 }
 
+// Function area 
 
 function vatCalculator( vatIncreaseOrNot ){
     const subTotal = parseFloat(document.getElementById('sub-total').innerText); 
@@ -112,3 +97,7 @@ function vatCalculator( vatIncreaseOrNot ){
     
 }
 
+function totalAmount( subtotal, vat ){
+    const totalResult = subtotal + vat;
+    return totalResult;
+}
