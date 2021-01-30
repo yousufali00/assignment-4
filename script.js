@@ -35,13 +35,13 @@ economyMinusBtn.addEventListener( 'click', () => {
 
 // Book now 
 
-const bookNowBtn = document.getElementById('book-now');
+// const bookNowBtn = document.getElementById('book-now');
 
-bookNowBtn.addEventListener( 'click', (event) =>{
-    document.getElementById('booking-area').style.display = 'none'
-    document.getElementById('booking-content-left').style.display = 'none'
-    document.getElementById('confirmation-area').style.display = 'block'
-} );
+// bookNowBtn.addEventListener( 'click', (event) =>{
+//     document.getElementById('booking-area').style.display = 'none'
+//     document.getElementById('booking-content-left').style.display = 'none'
+//     document.getElementById('confirmation-area').style.display = 'block'
+// } );
 
 
 function  calculationHandler( increaseOrNot, inputId ){
